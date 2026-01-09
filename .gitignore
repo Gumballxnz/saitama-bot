@@ -1,0 +1,7 @@
+assets/auth/
+.vscode/
+node_modules/
+*.key
+*.pub
+*.tar.gz
+.DS_Store
