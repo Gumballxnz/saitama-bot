@@ -2,7 +2,7 @@
 
 > O melhor bot de WhatsApp, agora 100% atualizado e controlado por **Gumball**.
 
-![Saitama Bot](.ccccccc
+![Saitama Bot](./assets/images/takeshi-bot.png)
 
 ## 🚀 Funcionalidades
 
