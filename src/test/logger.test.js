@@ -119,7 +119,7 @@ describe("Logger Functions", () => {
 
       assert.strictEqual(consoleLogMock.mock.calls.length, 1);
       const args = consoleLogMock.mock.calls[0].arguments;
-      assert.strictEqual(args[0], "\x1b[33m[TAKESHI BOT | WARNING]\x1b[0m");
+      assert.strictEqual(args[0], "\x1b[33m[SAITAMA BOT | WARNING]\x1b[0m");
       assert.strictEqual(args[1], "Aviso importante");
     });
 
@@ -241,12 +241,9 @@ describe("Logger Functions", () => {
         fn("teste");
 
         const args = consoleLogMock.mock.calls[0].arguments;
-        const prefix = args[0];
+        const log = args[0];
 
-        assert.ok(
-          prefix.includes("TAKESHI BOT"),
-          "Should include 'TAKESHI BOT' in prefix"
-        );
+        assert.ok(log.includes("[SAITAMA BOT]"), "Should include 'SAITAMA BOT' in prefix");
       }
     });
 
