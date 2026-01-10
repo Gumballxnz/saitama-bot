@@ -34,11 +34,11 @@ export default {
     }
 
     try {
-      const menuImagePath = path.join(ASSETS_DIR, "images", "takeshi-bot.png");
+      const imagePath = path.resolve(ASSETS_DIR, "images", "saitama-bot.png");
 
       let backupPath = "";
 
-      if (fs.existsSync(menuImagePath)) {
+      if (fs.existsSync(imagePath)) {
         backupPath = path.join(ASSETS_DIR, "images", "takeshi-bot-backup.png");
 
         fs.copyFileSync(menuImagePath, backupPath);

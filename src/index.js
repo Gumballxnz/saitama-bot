@@ -55,8 +55,8 @@
  *
  * Abra a pasta "assets"
  * Depois, abra a pasta "images"
- * Substitua a imagem "takeshi-bot.png" por outra de sua preferência!
- * Só não esqueça de manter o nome "takeshi-bot.png"
+ * Substitua a imagem "saitama-bot.png" por outra de sua preferência!
+ * Só não esqueça de manter o nome "saitama-bot.png"
  *
  * Ou se preferir, digite <prefixo>set-menu-image mencionando
  * imagem que deseja definir como foto do menu.
