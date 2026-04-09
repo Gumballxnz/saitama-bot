@@ -129,8 +129,10 @@ export async function isAdmin({ remoteJid, userLid, socket }) {
 
 export function isBotOwner({ userLid }) {
   if (!userLid || !OWNER_LID) return false;
+
   const cleanUser = userLid.split("@")[0].split(":")[0];
   const cleanOwner = OWNER_LID.split("@")[0].split(":")[0];
+
   return cleanUser === cleanOwner;
 }
 

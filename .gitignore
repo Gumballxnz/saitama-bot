@@ -1,7 +1,36 @@
-assets/auth/
-.vscode/
+# Dependências
 node_modules/
+
+# Autenticação WhatsApp (sessão privada)
+assets/auth/
+
+# Arquivos temporários
+assets/temp/
+
+# Chaves SSH e certificados (NUNCA enviar)
+*.pem
 *.key
 *.pub
+*.p12
+*.pfx
+
+# Arquivos de deploy
 *.tar.gz
+*.zip
+
+# Dados da instância AWS
+deploy-config.*
+server-info.*
+
+# IDE e sistema
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Variáveis de ambiente
+.env
+.env.*

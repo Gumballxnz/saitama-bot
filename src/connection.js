@@ -86,21 +86,15 @@ export async function connect() {
   if (!socket.authState.creds.registered) {
     warningLog("Credenciais ainda não configuradas!");
 
-    infoLog('Informe o número de telefone do bot (exemplo: "5511920202020"):');
+    // Número do bot para pareamento automático (sem input interativo para PM2)
+    const phoneNumber = "258852453741";
 
-    const phoneNumber = await question("Informe o número de telefone do bot: ");
-
-    if (!phoneNumber) {
-      errorLog(
-        'Número de telefone inválido! Tente novamente com o comando "npm start".'
-      );
-
-      process.exit(1);
-    }
+    infoLog(`Usando número: ${phoneNumber} para pareamento...`);
 
     const code = await socket.requestPairingCode(onlyNumbers(phoneNumber));
 
     sayLog(`Código de pareamento: ${code}`);
+    sayLog("Use este código no WhatsApp > Dispositivos Conectados > Vincular Dispositivo");
   }
 
   socket.ev.on("connection.update", async (update) => {

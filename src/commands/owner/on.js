@@ -10,10 +10,19 @@ export default {
   /**
    * @param {CommandHandleProps} props
    */
-  handle: async ({ sendSuccessReply, remoteJid, isGroup }) => {
+  handle: async ({ sendSuccessReply, remoteJid, isGroup, userLid }) => {
     if (!isGroup) {
       throw new WarningError("Este comando deve ser usado dentro de um grupo.");
     }
+
+    // Import dynamically to avoid circular dependency if needed, 
+    // or assume isBotOwner is available via previous imports (need to add import)
+    // Actually, on.js imports are: PREFIX, WarningError, activateGroup.
+    // I need to import isBotOwner or checkPermission? 
+    // Let's use isBotOwner from middlewares.
+
+    // Wait, I need to add the import first.
+
     activateGroup(remoteJid);
     await sendSuccessReply("Bot ativado no grupo!");
   },

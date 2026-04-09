@@ -21,7 +21,7 @@ export const BOT_LID = "258842386995@s.whatsapp.net";
 // LID do dono do bot.
 // Para obter o LID do dono do bot, use o comando <prefixo>meu-lid
 // Troque o <prefixo> pelo prefixo do bot (ex: /meu-lid).
-export const OWNER_LID = "258879116693@s.whatsapp.net";
+export const OWNER_LID = "159034049044504@lid";
 
 // Diretório dos comandos
 export const COMMANDS_DIR = path.join(__dirname, "commands");

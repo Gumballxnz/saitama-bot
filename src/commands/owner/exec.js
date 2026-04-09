@@ -143,7 +143,7 @@ Este comando pode causar danos críticos ao sistema.`,
 
         await sendSuccessReply(
           `Resultado do comando: \`${fullArgs}\`\n\n` +
-            `\`\`\`\n${output.trim()}\n\`\`\``
+          `\`\`\`\n${output.trim()}\n\`\`\``
         );
       }
     );
